@@ -1,0 +1,17 @@
+{
+  "name": "rsvp-backend",
+  "version": "1.0.0",
+  "description": "RSVP backend server",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "twilio": "^5.12.0"
+  }
+}

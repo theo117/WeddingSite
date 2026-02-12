@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name1 & Name2 | Wedding Celebration</title>
+  <meta name="description" content="Celebrate the wedding of Name1 and Name2.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <video id="background-video" autoplay muted loop playsinline aria-hidden="true">
+      <source src="vid.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-vignette" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="monogram reveal">N | N</p>
+      <p class="eyebrow reveal">By His grace, we found each other</p>
+      <h1 class="couple-names reveal">Name1 &amp; Name2</h1>
+      <div class="ornament reveal" aria-hidden="true"></div>
+      <p class="hero-line reveal">Saturday, March 19, 2026 | Eastern Cape, South Africa</p>
+      <p class="scripture reveal">"What God has joined together, let no one separate." Matthew 19:6</p>
+      <a href="#rsvp" class="hero-cta reveal">Reserve Your Seat</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-decor decor-left" aria-hidden="true"></div>
+    <div class="page-decor decor-right" aria-hidden="true"></div>
+
+    <section class="countdown-section reveal" aria-label="Countdown to wedding day">
+      <h2>Counting down to forever</h2>
+      <div class="countdown-grid">
+        <article class="count-card">
+          <span id="days" class="count-value">0</span>
+          <span class="count-label">Days</span>
+        </article>
+        <article class="count-card">
+          <span id="hours" class="count-value">0</span>
+          <span class="count-label">Hours</span>
+        </article>
+        <article class="count-card">
+          <span id="minutes" class="count-value">0</span>
+          <span class="count-label">Minutes</span>
+        </article>
+        <article class="count-card">
+          <span id="seconds" class="count-value">0</span>
+          <span class="count-label">Seconds</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="story reveal">
+      <div class="section-head">
+        <h2>Our Story</h2>
+        <div class="ornament"></div>
+      </div>
+      <p>
+        What began as a simple friendship grew into a testimony of grace. Through prayer,
+        patience, and shared faith, we learned that love is not only a feeling, but a covenant.
+      </p>
+      <p>
+        We are grateful for every season that led us here, and we cannot wait to begin this next
+        chapter surrounded by the people we cherish most.
+      </p>
+    </section>
+
+    <section class="timeline reveal">
+      <div class="section-head">
+        <h2>Wedding Day Timeline</h2>
+        <div class="ornament"></div>
+      </div>
+      <div class="timeline-grid">
+        <article class="timeline-item">
+          <p class="time">2:30 PM</p>
+          <h3>Guests Arrive</h3>
+          <p>Welcome drinks and seating.</p>
+        </article>
+        <article class="timeline-item">
+          <p class="time">3:00 PM</p>
+          <h3>Ceremony</h3>
+          <p>We exchange vows before God and family.</p>
+        </article>
+        <article class="timeline-item">
+          <p class="time">4:30 PM</p>
+          <h3>Reception</h3>
+          <p>Dinner, toasts, and celebration.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="details reveal">
+      <div class="section-head">
+        <h2>Wedding Details</h2>
+        <div class="ornament"></div>
+      </div>
+      <div class="details-grid">
+        <article class="detail-card">
+          <h3>Date</h3>
+          <p>Saturday, March 19, 2026</p>
+        </article>
+        <article class="detail-card">
+          <h3>Time</h3>
+          <p>3:00 PM</p>
+        </article>
+        <article class="detail-card">
+          <h3>Venue</h3>
+          <p>The Olive Grove Estate<br>Eastern Cape, South Africa</p>
+        </article>
+        <article class="detail-card">
+          <h3>Dress Code</h3>
+          <p>Garden Formal<br>Neutral and earth tones</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="note reveal">
+      <div class="note-panel">
+        <h2>A Note on Gifts</h2>
+        <p>
+          Your prayers and presence are the greatest blessing. If you wish to honor us with a gift,
+          we would be grateful for contributions toward our new home.
+        </p>
+      </div>
+    </section>
+
+    <section id="rsvp" class="rsvp reveal">
+      <div class="section-head">
+        <h2>RSVP</h2>
+        <div class="ornament"></div>
+      </div>
+      <p class="rsvp-intro">Please respond by February 20, 2026. We will confirm by WhatsApp once your RSVP is submitted.</p>
+      <form id="rsvpForm" class="rsvp-form" novalidate>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone Number</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="+27731234567"
+          pattern="^\+[1-9]\d{9,14}$"
+          title="Use full international format, for example +27731234567"
+          required
+        >
+
+        <label for="attendance">Will you attend?</label>
+        <select id="attendance" name="attendance" required>
+          <option value="">Select one</option>
+          <option value="yes">Yes, I will attend</option>
+          <option value="no">No, I cannot attend</option>
+        </select>
+
+        <label for="guests">Number of Guests</label>
+        <input type="number" id="guests" name="guests" min="1" max="5" value="1" required>
+
+        <label for="message">Message (Optional)</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write a blessing or note..."></textarea>
+
+        <button type="submit">Send RSVP</button>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer reveal">
+    <p>With gratitude and love, Name1 and Name2</p>
+  </footer>
+</body>
+</html>
